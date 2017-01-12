@@ -7,3 +7,5 @@ document.getElementById("iframe").contentWindow.postMessage(
 document.getElementById("iframe").contentWindow.postMessage(
       "buy",
       "*");
+
+window.frames[0].postMessage({'action':'buy'}, '*');
