@@ -21,7 +21,6 @@ public class TestScript : MonoBehaviour {
 	{
 		Debug.Log("OnClickEnter");
 		OpenRechargePopup();
-		//Application.ExternalCall("OpenRechargePopup");
 	}
 
 	private void FillText()
