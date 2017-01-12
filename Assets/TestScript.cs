@@ -6,8 +6,8 @@ using UnityEngine.UI;
 
 public class TestScript : MonoBehaviour {
 
-	//[DllImport("__Internal")]
-	//private static extern string OpenRechargePopup();
+	[DllImport("__Internal")]
+	private static extern void OpenRechargePopup();
 
 	public Button btn;
 	public Text txt;
@@ -20,8 +20,8 @@ public class TestScript : MonoBehaviour {
 	private void OnClickEnter()
 	{
 		Debug.Log("OnClickEnter");
-		//OpenRechargePopup();
-		Application.ExternalCall("OpenRechargePopup");
+		OpenRechargePopup();
+		//Application.ExternalCall("OpenRechargePopup");
 	}
 
 	private void FillText()
